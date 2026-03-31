@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>彼が「また会いたい」と思うデートの終わり方5パターン</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #0d1b2a;
+      --navy2: #162032;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-pale: #fdf6e3;
+      --rose: #e8a0a0;
+      --rose-dark: #c97a7a;
+      --cream: #faf5ef;
+      --text: #2a1f15;
+    }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ===== COVER ===== */
+    .cover {
+      background: var(--navy);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover-stars {
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 60% 15%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 80% 60%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 35% 70%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(2px 2px at 90% 20%, rgba(201,168,76,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 10% 85%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 50% 50%, rgba(201,168,76,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 80%, rgba(255,255,255,0.4) 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .cover-glow {
+      position: absolute;
+      bottom: -100px; left: 50%;
+      transform: translateX(-50%);
+      width: 500px; height: 300px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cover-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: var(--gold);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    .cover-title-en {
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+    }
+
+    .cover-title {
+      font-size: 28px;
+      font-weight: 900;
+      color: white;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+
+    .cover-title em {
+      font-style: normal;
+      color: var(--gold-light);
+    }
+
+    .cover-divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 20px auto;
+    }
+
+    .cover-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      line-height: 2;
+      max-width: 300px;
+    }
+
+    .cover-badge {
+      margin-top: 28px;
+      display: inline-block;
+      border: 1px solid rgba(201,168,76,0.4);
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      padding: 6px 20px;
+      border-radius: 2px;
+    }
+
+    .cover-scroll {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      opacity: 0.4;
+      animation: bounce 2s infinite;
+    }
+
+    .cover-scroll span { font-size: 10px; color: white; letter-spacing: 2px; }
+    .cover-scroll-line {
+      width: 1px; height: 36px;
+      background: linear-gradient(to bottom, white, transparent);
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ===== INTRO ===== */
+    .intro-section {
+      background: var(--navy2);
+      padding: 40px 24px;
+    }
+
+    .intro-section p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+      line-height: 2.1;
+      max-width: 560px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .intro-section .hl { color: var(--gold-light); font-weight: 700; }
+
+    /* ===== CONTENTS PAGE ===== */
+    .contents-section {
+      background: var(--cream);
+      padding: 40px 24px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .contents-list {
+      border-top: 1px solid rgba(201,168,76,0.3);
+    }
+
+    .contents-item {
+      display: flex;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      gap: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .contents-item:hover .ci-num { color: var(--gold); }
+    .contents-item:hover .ci-title { color: var(--navy); }
+
+    .ci-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: rgba(201,168,76,0.4);
+      min-width: 44px;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+
+    .ci-info { flex: 1; }
+
+    .ci-label {
+      font-size: 10px;
+      color: var(--rose-dark);
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .ci-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.4;
+      transition: color 0.2s;
+    }
+
+    .ci-arrow {
+      font-size: 14px;
+      color: var(--gold);
+      opacity: 0.5;
+    }
+
+    /* ===== PATTERN CARD ===== */
+    .pattern-section {
+      padding: 0 0 20px;
+    }
+
+    /* ヘッダー */
+    .pattern-cover {
+      background: var(--navy);
+      padding: 48px 28px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pattern-cover::after {
+      content: attr(data-num);
+      position: absolute;
+      right: -10px;
+      top: -20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 120px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .pattern-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .pattern-title {
+      font-size: 22px;
+      font-weight: 900;
+      color: white;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .pattern-title em { color: var(--gold-light); font-style: normal; }
+
+    .pattern-tagline {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.8;
+    }
+
+    /* ボディ */
+    .pattern-body {
+      background: white;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 28px 22px;
+    }
+
+    /* シーン設定 */
+    .scene-box {
+      background: linear-gradient(135deg, var(--gold-pale), #fffdf7);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 22px;
+      border-left: 3px solid var(--gold);
+    }
+
+    .scene-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .scene-text {
+      font-size: 13px;
+      color: #5a4a3a;
+      line-height: 1.9;
+    }
+
+    /* 帰り際の行動 */
+    .action-section { margin-bottom: 22px; }
+
+    .action-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .action-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(13,27,42,0.15), transparent);
+    }
+
+    .action-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .action-step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .action-step-text {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      line-height: 1.7;
+      flex: 1;
+      padding-top: 4px;
+    }
+
+    /* 帰り際のセリフ */
+    .script-section { margin-bottom: 22px; }
+
+    .script-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--rose-dark);
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .script-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(201,122,122,0.3), transparent);
+    }
+
+    .speech-bubble {
+      background: #fff0f3;
+      border-radius: 0 18px 18px 18px;
+      padding: 14px 18px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #3a1f2a;
+      line-height: 1.7;
+      position: relative;
+      margin-left: 10px;
+      border-left: 3px solid var(--rose-dark);
+    }
+
+    /* LINE モックアップ */
+    .line-section { margin-bottom: 22px; }
+
+    .line-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #06c755;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .line-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(6,199,85,0.3), transparent);
+    }
+
+    .line-mock {
+      background: #f5f5f5;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .line-mock-header {
+      background: #1f1f1f;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .line-mock-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #444, #222);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .line-mock-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .line-mock-body {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .line-msg-wrap {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
+    .line-msg-time {
+      font-size: 10px;
+      color: #aaa;
+      margin-bottom: 2px;
+    }
+
+    .line-msg-bubble {
+      background: #06c755;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 18px 18px 4px 18px;
+      font-size: 13px;
+      line-height: 1.7;
+      max-width: 260px;
+      font-weight: 600;
+    }
+
+    .line-reply-wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .line-reply-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #888, #555);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .line-reply-bubble {
+      background: white;
+      color: #333;
+      padding: 12px 16px;
+      border-radius: 18px 18px 18px 4px;
+      font-size: 13px;
+      line-height: 1.7;
+      max-width: 220px;
+    }
+
+    .line-hint {
+      font-size: 11px;
+      color: #999;
+      text-align: center;
+      padding: 8px 0 4px;
+      font-style: italic;
+    }
+
+    /* なぜ効くか */
+    .why-section {
+      background: var(--navy);
+      border-radius: 14px;
+      padding: 20px;
+    }
+
+    .why-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .why-text {
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.9;
+    }
+
+    .why-text em { color: var(--gold-light); font-style: normal; font-weight: 700; }
+
+    /* NG例 */
+    .ng-section {
+      background: #fff5f5;
+      border-radius: 14px;
+      padding: 16px;
+      margin-top: 14px;
+      border-left: 3px solid #ef9a9a;
+    }
+
+    .ng-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: #c62828;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    .ng-example {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.8;
+    }
+
+    .ng-example strong { color: #c62828; }
+
+    /* ===== セパレーター ===== */
+    .pattern-sep {
+      height: 8px;
+      background: linear-gradient(135deg, var(--cream) 0%, #ede5d5 50%, var(--cream) 100%);
+    }
+
+    /* ===== まとめ ===== */
+    .summary-section {
+      background: var(--navy);
+      padding: 48px 28px;
+      text-align: center;
+    }
+
+    .summary-section .eyebrow {
+      font-size: 10px;
+      color: var(--gold);
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .summary-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: white;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .summary-section h2 em {
+      font-style: normal;
+      color: var(--gold-light);
+    }
+
+    .summary-divider {
+      width: 50px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 0 auto 20px;
+    }
+
+    .summary-section p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      line-height: 2.1;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    /* チェックボックスまとめ */
+    .checklist-mini {
+      background: rgba(255,255,255,0.04);
+      border-radius: 14px;
+      padding: 20px;
+      margin: 24px auto;
+      max-width: 360px;
+      text-align: left;
+    }
+
+    .checklist-mini-title {
+      font-size: 11px;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    .cl-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+
+    .cl-item:hover { background: rgba(255,255,255,0.05); }
+
+    .cl-box {
+      width: 18px; height: 18px;
+      border-radius: 4px;
+      border: 1px solid rgba(201,168,76,0.4);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      margin-top: 2px;
+    }
+
+    .cl-item.done .cl-box {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .cl-check { font-size: 11px; color: var(--navy); opacity: 0; transition: opacity 0.2s; }
+    .cl-item.done .cl-check { opacity: 1; }
+
+    .cl-text {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.6;
+      flex: 1;
+      transition: color 0.2s;
+    }
+
+    .cl-item.done .cl-text {
+      color: var(--gold-light);
+      text-decoration: line-through;
+      text-decoration-color: rgba(201,168,76,0.4);
+    }
+
+    .footer-copy {
+      font-size: 11px;
+      color: rgba(255,255,255,0.2);
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    /* ===== SCROLL ANIMATION ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-stars"></div>
+  <div class="cover-glow"></div>
+  <div class="cover-eyebrow">✦ 無料プレゼント ✦</div>
+  <div class="cover-title-en">The Art of Saying Goodbye</div>
+  <h1 class="cover-title">
+    彼が<em>「また会いたい」</em>と<br>思うデートの終わり方<br><em>5 Patterns</em>
+  </h1>
+  <div class="cover-divider"></div>
+  <p class="cover-sub">
+    帰り際の「あの瞬間」と<br>お別れLINEで、次のデートが決まる。
+  </p>
+  <div class="cover-badge">COMPLETE GUIDE</div>
+  <div class="cover-scroll">
+    <span>SCROLL</span>
+    <div class="cover-scroll-line"></div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="intro-section">
+  <p>
+    デートがどれだけ楽しくても、<span class="hl">終わり方がすべてを決める</span>ことがあります。<br><br>
+    「また会おうね」で終わったのに、なぜか次のデートが決まらない。<br>
+    その理由は、帰り際とお別れLINEに隠れています。<br><br>
+    <span class="hl">「余韻」「期待感」「物足りなさ」</span>、この3つを自然に作れた日のデートだけが、次につながります。
+  </p>
+</div>
+
+<!-- CONTENTS -->
+<div class="contents-section">
+  <div class="section-eyebrow">Contents</div>
+  <div class="contents-list">
+    <div class="contents-item" onclick="scrollTo('p1')">
+      <div class="ci-num">01</div>
+      <div class="ci-info">
+        <div class="ci-label">PATTERN 01</div>
+        <div class="ci-title">余韻を残して先に引くパターン</div>
+      </div>
+      <div class="ci-arrow">→</div>
+    </div>
+    <div class="contents-item" onclick="scrollTo('p2')">
+      <div class="ci-num">02</div>
+      <div class="ci-info">
+        <div class="ci-label">PATTERN 02</div>
+        <div class="ci-title">次のデートを「仕込む」パターン</div>
+      </div>
+      <div class="ci-arrow">→</div>
+    </div>
+    <div class="contents-item" onclick="scrollTo('p3')">
+      <div class="ci-num">03</div>
+      <div class="ci-info">
+        <div class="ci-label">PATTERN 03</div>
+        <div class="ci-title">彼に「活躍させる」パターン</div>
+      </div>
+      <div class="ci-arrow">→</div>
+    </div>
+    <div class="contents-item" onclick="scrollTo('p4')">
+      <div class="ci-num">04</div>
+      <div class="ci-info">
+        <div class="ci-label">PATTERN 04</div>
+        <div class="ci-title">「続きが気になる」を残すパターン</div>
+      </div>
+      <div class="ci-arrow">→</div>
+    </div>
+    <div class="contents-item" onclick="scrollTo('p5')">
+      <div class="ci-num">05</div>
+      <div class="ci-info">
+        <div class="ci-label">PATTERN 05</div>
+        <div class="ci-title">「覚えてたよ」LINEパターン</div>
+      </div>
+      <div class="ci-arrow">→</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PATTERN 01 ===== -->
+<div class="pattern-section" id="p1">
+  <div class="pattern-cover" data-num="01">
+    <div class="pattern-num">PATTERN 01</div>
+    <h2 class="pattern-title">余韻を残して<br><em>先に引く</em>パターン</h2>
+    <p class="pattern-tagline">一番楽しい瞬間に「そろそろ行くね」と言える女性が、最も追われる。</p>
+  </div>
+  <div class="pattern-body">
+
+    <div class="scene-box fade-in">
+      <div class="scene-label">🎬 シーン設定</div>
+      <div class="scene-text">ご飯も終わり、お茶をしながら会話が盛り上がっている。彼も楽しそう。「まだいられるな」という雰囲気のとき。</div>
+    </div>
+
+    <div class="action-section fade-in">
+      <div class="action-label">📍 帰り際の行動</div>
+      <div class="action-step">
+        <div class="action-step-num">1</div>
+        <div class="action-step-text">会話が盛り上がっている最中に、さりげなく時計を見る</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">2</div>
+        <div class="action-step-text">「あ、もうこんな時間！そろそろ行かなきゃ」と自分から切り上げる</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">3</div>
+        <div class="action-step-text">名残惜しそうに、でも笑顔でさらっと「今日楽しかった！」と言って去る</div>
+      </div>
+    </div>
+
+    <div class="script-section fade-in">
+      <div class="script-label">💬 帰り際の「正解セリフ」</div>
+      <div class="speech-bubble">「もう少し話したいけど、今日はここまでにする！またね😊」</div>
+    </div>
+
+    <div class="line-section fade-in">
+      <div class="line-label">📱 お別れLINEの例</div>
+      <div class="line-mock">
+        <div class="line-mock-header">
+          <div class="line-mock-avatar">👨</div>
+          <div class="line-mock-name">彼</div>
+        </div>
+        <div class="line-mock-body">
+          <div class="line-msg-wrap">
+            <div class="line-msg-time">22:30</div>
+            <div class="line-msg-bubble">今日楽しかった〜！また話の続き聞かせて☺️</div>
+          </div>
+          <div class="line-reply-wrap">
+            <div class="line-reply-avatar">👨</div>
+            <div class="line-reply-bubble">こっちも楽しかった！また行こう</div>
+          </div>
+        </div>
+        <div class="line-hint">※ 彼からこう返ってくる確率が高い</div>
+      </div>
+    </div>
+
+    <div class="why-section fade-in">
+      <div class="why-label">🔍 なぜ効くか — 心理学的解説</div>
+      <div class="why-text">人間には<em>「未完の物事をより強く記憶する」</em>という性質があります（ツァイガルニク効果）。会話の途中で終わることで、彼の頭の中に「続き」が残り続けます。「また話したい」という気持ちが自然に生まれる、最もシンプルで強力なパターンです。</div>
+    </div>
+
+    <div class="ng-section fade-in">
+      <div class="ng-label">🚫 やりがちなNG</div>
+      <div class="ng-example">
+        <strong>「もう少しいたい…帰りたくないな」</strong> — 物足りなさを言葉にすると、余韻が消えます。気持ちは行動で見せて、言葉にしないことが大事。
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pattern-sep"></div>
+
+<!-- ===== PATTERN 02 ===== -->
+<div class="pattern-section" id="p2">
+  <div class="pattern-cover" data-num="02" style="background: linear-gradient(150deg, #0d1b2a, #1a2840);">
+    <div class="pattern-num">PATTERN 02</div>
+    <h2 class="pattern-title">次のデートを<br><em>「仕込む」</em>パターン</h2>
+    <p class="pattern-tagline">彼の頭の中に「次のイメージ」を植え付けて帰る。</p>
+  </div>
+  <div class="pattern-body">
+
+    <div class="scene-box fade-in" style="border-left-color: #8e24aa; background: linear-gradient(135deg, #f3e5f5, #fdf7ff);">
+      <div class="scene-label" style="color: #8e24aa;">🎬 シーン設定</div>
+      <div class="scene-text">デート中の会話で「行ってみたいお店」「気になる場所」の話題が出た。帰り際にさりげなく使うシーン。</div>
+    </div>
+
+    <div class="action-section fade-in">
+      <div class="action-label">📍 帰り際の行動</div>
+      <div class="action-step">
+        <div class="action-step-num">1</div>
+        <div class="action-step-text">デートの最中に「いつか行ってみたい場所・やってみたいこと」をさりげなくメモしておく</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">2</div>
+        <div class="action-step-text">別れ際に「今日話してた○○、今度行こうよ」と一言だけ言って去る</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">3</div>
+        <div class="action-step-text">詳しい話はせず「次がある」という空気だけを残す</div>
+      </div>
+    </div>
+
+    <div class="script-section fade-in">
+      <div class="script-label">💬 帰り際の「正解セリフ」</div>
+      <div class="speech-bubble">「今日話してた○○のお店、今度行きたいな。またね！」</div>
+    </div>
+
+    <div class="line-section fade-in">
+      <div class="line-label">📱 お別れLINEの例（帰宅後1〜2時間）</div>
+      <div class="line-mock">
+        <div class="line-mock-header">
+          <div class="line-mock-avatar">👨</div>
+          <div class="line-mock-name">彼</div>
+        </div>
+        <div class="line-mock-body">
+          <div class="line-msg-wrap">
+            <div class="line-msg-time">23:10</div>
+            <div class="line-msg-bubble">今日話してた○○、調べたら評判よかった！次行ってみよ😊</div>
+          </div>
+          <div class="line-reply-wrap">
+            <div class="line-reply-avatar">👨</div>
+            <div class="line-reply-bubble">いいね！いつ行く？</div>
+          </div>
+        </div>
+        <div class="line-hint">※ 彼が「いつ行く？」と言い出すのが理想の流れ</div>
+      </div>
+    </div>
+
+    <div class="why-section fade-in">
+      <div class="why-label">🔍 なぜ効くか — 心理学的解説</div>
+      <div class="why-text"><em>「次のデート」のイメージを彼の中に植え付けることで</em>、彼が自発的に「行こう」と言い出しやすくなります。「誘われる」のを待つのではなく、彼が「自分から誘った感覚」になれる設計がポイント。彼のプライドを守りながら関係が進みます。</div>
+    </div>
+
+    <div class="ng-section fade-in">
+      <div class="ng-label">🚫 やりがちなNG</div>
+      <div class="ng-example">
+        <strong>「じゃあ来週どう？」とその場で日程まで決めようとする</strong> — 「仕込み」が台無しになります。次の約束を迫ると彼が引きやすい。種を蒔くだけにして、育てるのは彼に任せる。
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pattern-sep"></div>
+
+<!-- ===== PATTERN 03 ===== -->
+<div class="pattern-section" id="p3">
+  <div class="pattern-cover" data-num="03" style="background: linear-gradient(150deg, #1a1200, #2d2000);">
+    <div class="pattern-num">PATTERN 03</div>
+    <h2 class="pattern-title">彼に<em>「活躍させる」</em>パターン</h2>
+    <p class="pattern-tagline">「この子のために役に立てた」という感覚が、また会いたい気持ちを生む。</p>
+  </div>
+  <div class="pattern-body">
+
+    <div class="scene-box fade-in" style="border-left-color: #e65100; background: linear-gradient(135deg, #fff3e0, #fffaf5);">
+      <div class="scene-label" style="color: #e65100;">🎬 シーン設定</div>
+      <div class="scene-text">帰り道、駅まで歩いている場面。地図を見てもらう、重い荷物を持ってもらう、高いところのものを取ってもらうなど、彼が「活躍できる場面」を自然に作る。</div>
+    </div>
+
+    <div class="action-section fade-in">
+      <div class="action-label">📍 帰り際の行動</div>
+      <div class="action-step">
+        <div class="action-step-num">1</div>
+        <div class="action-step-text">帰り道で「どっちの道だったっけ？」と地図を見てもらう、または荷物を「重くて〜」とさりげなく言う</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">2</div>
+        <div class="action-step-text">彼が助けてくれたときに、大げさではなく「ありがとう、助かった」と素直に伝える</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">3</div>
+        <div class="action-step-text">「頼りになるな」の一言を笑顔で添えて別れる</div>
+      </div>
+    </div>
+
+    <div class="script-section fade-in">
+      <div class="script-label">💬 帰り際の「正解セリフ」</div>
+      <div class="speech-bubble">「ありがとう、助かった。なんか頼りになるな〜。またね！」</div>
+    </div>
+
+    <div class="line-section fade-in">
+      <div class="line-label">📱 お別れLINEの例</div>
+      <div class="line-mock">
+        <div class="line-mock-header">
+          <div class="line-mock-avatar">👨</div>
+          <div class="line-mock-name">彼</div>
+        </div>
+        <div class="line-mock-body">
+          <div class="line-msg-wrap">
+            <div class="line-msg-time">22:45</div>
+            <div class="line-msg-bubble">今日道案内してくれてありがとう！おかげで迷わなかった😊 また一緒に行こうね</div>
+          </div>
+          <div class="line-reply-wrap">
+            <div class="line-reply-avatar">👨</div>
+            <div class="line-reply-bubble">そんなことで😂 またいつでも言って</div>
+          </div>
+        </div>
+        <div class="line-hint">※ 「また呼ばれたい」という気持ちが彼の中に生まれる</div>
+      </div>
+    </div>
+
+    <div class="why-section fade-in">
+      <div class="why-label">🔍 なぜ効くか — 心理学的解説</div>
+      <div class="why-text">男性には<em>「守りたい・助けたい」という保護本能</em>があります。あなたが自然に「頼る場面」を作ることで、彼の中に「この子のそばにいたい」という感情が育ちます。感謝を素直に伝えることで、彼は「また頼られたい」「また会いたい」と感じます。</div>
+    </div>
+
+    <div class="ng-section fade-in">
+      <div class="ng-label">🚫 やりがちなNG</div>
+      <div class="ng-example">
+        <strong>「私できないから教えて〜」と全部依存する</strong> — 頼るのはワンポイントだけが正解。何でも頼りすぎると「自立していない子」という印象になります。
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pattern-sep"></div>
+
+<!-- ===== PATTERN 04 ===== -->
+<div class="pattern-section" id="p4">
+  <div class="pattern-cover" data-num="04" style="background: linear-gradient(150deg, #0a1a0d, #0d2610);">
+    <div class="pattern-num">PATTERN 04</div>
+    <h2 class="pattern-title"><em>「続きが気になる」</em>を<br>残すパターン</h2>
+    <p class="pattern-tagline">話の途中で「また今度」と言える女性は、彼の頭を占領し続ける。</p>
+  </div>
+  <div class="pattern-body">
+
+    <div class="scene-box fade-in" style="border-left-color: #2e7d32; background: linear-gradient(135deg, #e8f5e9, #f5fff7);">
+      <div class="scene-label" style="color: #2e7d32;">🎬 シーン設定</div>
+      <div class="scene-text">帰り際、または帰り道で何か面白い話や体験談を話している最中。「全部話さずに終わる」という意図的な演出をするシーン。</div>
+    </div>
+
+    <div class="action-section fade-in">
+      <div class="action-label">📍 帰り際の行動</div>
+      <div class="action-step">
+        <div class="action-step-num">1</div>
+        <div class="action-step-text">帰り際に「実はこんなことがあって…」と話し始める（長くなる話を選ぶ）</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">2</div>
+        <div class="action-step-text">話の途中で「あ、この話長くなるからまた今度！」と笑って切り上げる</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">3</div>
+        <div class="action-step-text">そのまま「じゃあね！」と去る。続きをLINEでも話さない</div>
+      </div>
+    </div>
+
+    <div class="script-section fade-in">
+      <div class="script-label">💬 帰り際の「正解セリフ」</div>
+      <div class="speech-bubble">「あ、これ話すと長くなるからまた今度にする！笑　またね〜！」</div>
+    </div>
+
+    <div class="line-section fade-in">
+      <div class="line-label">📱 お別れLINEの例（あえて何も送らない）</div>
+      <div class="line-mock">
+        <div class="line-mock-header">
+          <div class="line-mock-avatar">👨</div>
+          <div class="line-mock-name">彼</div>
+        </div>
+        <div class="line-mock-body">
+          <div class="line-reply-wrap">
+            <div class="line-reply-avatar">👨</div>
+            <div class="line-reply-bubble">さっきの話の続き気になる笑　何があったの？</div>
+          </div>
+          <div class="line-msg-wrap">
+            <div class="line-msg-time">翌日</div>
+            <div class="line-msg-bubble">ふふ、気になる？笑　今度ね！</div>
+          </div>
+        </div>
+        <div class="line-hint">※ 彼から「気になる」と聞いてきたら大成功</div>
+      </div>
+    </div>
+
+    <div class="why-section fade-in">
+      <div class="why-label">🔍 なぜ効くか — 心理学的解説</div>
+      <div class="why-text"><em>「謎」と「未完」は人の記憶に最も残ります</em>。「続きを知りたい」という気持ちが、連絡する自然なきっかけを彼の中に生み出します。「また今度聞かせて」と言わせることができれば、次のデートを彼が設定する流れが自然に生まれます。</div>
+    </div>
+
+    <div class="ng-section fade-in">
+      <div class="ng-label">🚫 やりがちなNG</div>
+      <div class="ng-example">
+        <strong>別れLINEで「さっきの話の続き、実はね〜」と自分から話し始める</strong> — せっかくの「余白」が埋まってしまいます。彼が聞いてきたときだけ、少しだけ話して「続きはまた今度」を繰り返すのが正解。
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pattern-sep"></div>
+
+<!-- ===== PATTERN 05 ===== -->
+<div class="pattern-section" id="p5">
+  <div class="pattern-cover" data-num="05" style="background: linear-gradient(150deg, #1a0a2e, #0d1640);">
+    <div class="pattern-num">PATTERN 05</div>
+    <h2 class="pattern-title"><em>「覚えてたよ」</em><br>LINEパターン</h2>
+    <p class="pattern-tagline">「ちゃんと聞いてた」という事実が、彼の心に刺さる。</p>
+  </div>
+  <div class="pattern-body">
+
+    <div class="scene-box fade-in" style="border-left-color: #5c6bc0; background: linear-gradient(135deg, #e8eaf6, #f5f6ff);">
+      <div class="scene-label" style="color: #5c6bc0;">🎬 シーン設定</div>
+      <div class="scene-text">デートで彼が話していた「仕事のこと」「好きなもの」「気になっていること」を頭にメモしておく。帰宅後のLINEでそれを自然に織り交ぜる。</div>
+    </div>
+
+    <div class="action-section fade-in">
+      <div class="action-label">📍 帰り際〜帰宅後の行動</div>
+      <div class="action-step">
+        <div class="action-step-num">1</div>
+        <div class="action-step-text">デート中、彼が話していた具体的なエピソードを1つ覚えておく（仕事・趣味・好きな食べ物など）</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">2</div>
+        <div class="action-step-text">帰り際は「今日楽しかった！またね」とさらっと終わる</div>
+      </div>
+      <div class="action-step">
+        <div class="action-step-num">3</div>
+        <div class="action-step-text">帰宅後1〜2時間後に、覚えていた内容を使ったLINEを一言だけ送る</div>
+      </div>
+    </div>
+
+    <div class="script-section fade-in">
+      <div class="script-label">💬 帰り際の「正解セリフ」</div>
+      <div class="speech-bubble">「今日楽しかった〜！またね！」<br><span style="font-size:12px;font-weight:400;color:#888;">（シンプルにここで終わる。LINEで差をつける）</span></div>
+    </div>
+
+    <div class="line-section fade-in">
+      <div class="line-label">📱 お別れLINEの例（1〜2時間後）</div>
+      <div class="line-mock">
+        <div class="line-mock-header">
+          <div class="line-mock-avatar">👨</div>
+          <div class="line-mock-name">彼</div>
+        </div>
+        <div class="line-mock-body">
+          <div class="line-msg-wrap">
+            <div class="line-msg-time">23:20</div>
+            <div class="line-msg-bubble">今日○○の話、ずっと気になってたんだよね。面白かった！また聞かせて😊</div>
+          </div>
+          <div class="line-reply-wrap">
+            <div class="line-reply-avatar">👨</div>
+            <div class="line-reply-bubble">え、ちゃんと聞いてたんだ笑　嬉しい。また話すね</div>
+          </div>
+        </div>
+        <div class="line-hint">※「ちゃんと聞いてくれてた」という感動が彼に生まれる</div>
+      </div>
+    </div>
+
+    <div class="why-section fade-in">
+      <div class="why-label">🔍 なぜ効くか — 心理学的解説</div>
+      <div class="why-text">人は<em>「自分の話をちゃんと覚えていてくれた人」に強い好意を持ちます</em>（カクテルパーティー効果の応用）。彼が何気なく話したことを覚えていて、それをLINEで使うことで「この子は自分に興味を持ってくれている」という確信が生まれます。これが最もコストが低く、最も効果が高いパターンです。</div>
+    </div>
+
+    <div class="ng-section fade-in">
+      <div class="ng-label">🚫 やりがちなNG</div>
+      <div class="ng-example">
+        <strong>帰宅直後に「楽しかった〜！ありがとう！また会いたい！」と感情丸出しで送る</strong> — 気持ちは伝わりますが「重さ」も伝わります。感謝は一言、内容は具体的に。この2つだけで別格のLINEになります。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- まとめ -->
+<div class="summary-section" id="summary">
+  <div class="eyebrow">SUMMARY</div>
+  <h2>デートの終わりは、<br>次のデートの<em>始まり。</em></h2>
+  <div class="summary-divider"></div>
+  <p>「楽しかった」だけで終わらせない。<br>帰り際の一言と、お別れLINEの設計で<br>彼の「また会いたい」は作れます。</p>
+
+  <div class="checklist-mini">
+    <div class="checklist-mini-title">✦ 今日から使えるパターン ✦</div>
+    <div class="cl-item" onclick="this.classList.toggle('done')">
+      <div class="cl-box"><span class="cl-check">✓</span></div>
+      <div class="cl-text">01｜余韻を残して先に引く</div>
+    </div>
+    <div class="cl-item" onclick="this.classList.toggle('done')">
+      <div class="cl-box"><span class="cl-check">✓</span></div>
+      <div class="cl-text">02｜次のデートを「仕込む」</div>
+    </div>
+    <div class="cl-item" onclick="this.classList.toggle('done')">
+      <div class="cl-box"><span class="cl-check">✓</span></div>
+      <div class="cl-text">03｜彼に「活躍させる」</div>
+    </div>
+    <div class="cl-item" onclick="this.classList.toggle('done')">
+      <div class="cl-box"><span class="cl-check">✓</span></div>
+      <div class="cl-text">04｜「続きが気になる」を残す</div>
+    </div>
+    <div class="cl-item" onclick="this.classList.toggle('done')">
+      <div class="cl-box"><span class="cl-check">✓</span></div>
+      <div class="cl-text">05｜「覚えてたよ」LINEを送る</div>
+    </div>
+  </div>
+
+  <p class="footer-copy">© みい モテ育成 ｜ 無断転載禁止</p>
+</div>
+
+<script>
+// スムーズスクロール
+function scrollTo(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// スクロールアニメーション
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
